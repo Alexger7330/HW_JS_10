@@ -135,8 +135,8 @@ const ToDoList = function () {
     //     this.show()
     // }
 
-    this.delete = (deletedId) => {
-        toDoListArr = toDoListArr.filter(({ id }) => id != deletedId);
+    this.delete = (idTodo) => {
+        toDoListArr = toDoListArr.filter(({ id }) => id !== idTodo);
         this.show();
     }
 
